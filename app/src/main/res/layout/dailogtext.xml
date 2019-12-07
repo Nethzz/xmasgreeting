@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorDialog"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/txtAddtexttitle"
+        android:textSize="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Text"
+        android:textColor="@color/colorDialogText"
+        android:textAlignment="center"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/etxtTextAdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textColorHint="#ffffff"
+        android:hint="Click here to enter your text"
+        android:inputType="textPersonName"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/txtAnnie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/annie_use_your_telescope"
+            android:gravity="center_horizontal"
+            android:text="Abc"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/txtAlco"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/aclonica"
+            android:gravity="center_horizontal"
+            android:text="Abc"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/txtAbril"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/abril_fatface"
+            android:gravity="center_horizontal"
+            android:text="Abc"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/txtAlmen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/almendra_sc"
+            android:gravity="center_horizontal"
+            android:text="Abc"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <com.skydoves.colorpickerview.ColorPickerView
+            android:id="@+id/colorPickerView"
+            android:layout_width="match_parent"
+            android:gravity="center_horizontal"
+            android:layout_height="300dp"
+            app:palette="@drawable/palettenew"
+            app:selector="@drawable/wheel"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:textSize="18dp"
+        android:text="Next"
+        android:textAlignment="center"/>
+
+
+</LinearLayout>
